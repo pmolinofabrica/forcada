@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Espacios de Hospitalidad — Forcada Textiles</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="/src/style.css" />
+
+  <style>
+    /* Ajustes sutiles para hospitalidad */
+    body { background-color: #131313; overflow-x: hidden; }
+  </style>
+</head>
+<body class="font-body text-[#e5e2e1] selection:bg-[--color-primary] selection:text-[--color-on-primary]">
+
+  <!-- NAV (Consistencia Forcada) -->
+  <nav class="site-nav fixed top-0 w-full z-50 transition-all duration-300">
+    <div class="flex justify-between items-center w-full px-8 py-5 max-w-screen-2xl mx-auto backdrop-blur-md bg-[#131313]/70">
+      <a href="/" class="font-[Manrope] font-bold text-lg tracking-widest text-[#F9C03D]">
+        FORCADA
+      </a>
+      <div class="hidden md:flex gap-10 font-label uppercase tracking-widest text-[10px]">
+        <a href="/" class="text-white/60 hover:text-[#F9C03D] transition-colors duration-300">Inicio</a>
+        <a href="galeria.html" class="text-white/60 hover:text-[#F9C03D] transition-colors duration-300">Galería</a>
+        <a href="contacto.html" class="text-white/60 hover:text-[#F9C03D] transition-colors duration-300">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative min-h-screen flex items-end pt-32 pb-24 px-8 md:px-16 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img alt="Luxury Lodge Interior Mendoza" class="w-full h-full object-cover brightness-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJKwS1JHN6wt2mTkRvfmVHB9sjnr3gRqLtMYSkKYRXXY23jjtuWLdIaPOhIZlY8P9ekJ4hnPNLfnuen65jc3JKWwpAZjAm1frKU1F8WfuI4DEXw1dgb94Djx1vPJU3ynLywAbBQLzU6BfFdLiFySMQjY02SHDq7RnsifVp6_yGQhCoruddN_POxkDAk1MMwix1uT8mbjbpdyqPg8Ri9nC1n_pHrGtxPrAjwThsRT_jKRbuHMJGgXNy-8hvZDT-rK1OF1NGcNCcOGAv" />
+      <div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-transparent to-transparent"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-6xl w-full mx-auto animate-fade-up">
+      <h1 class="font-headline text-5xl md:text-8xl font-bold tracking-tighter leading-none mb-10 text-white">
+        El detalle que tus <br/>huéspedes recuerdan
+      </h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+        <p class="font-body text-lg md:text-xl leading-relaxed text-[#d3c5ae] font-light max-w-xl">
+          Cuidás cada decisión de tu espacio y se nota. La madera, la piedra, la vista: todo tiene sentido. Pero cuando el textil no acompaña, aparece una pequeña distancia que el huésped percibe aunque no la nombre. No tiene que ver con lo visual, sino con cómo cierra el conjunto. <span class="font-medium text-white italic">Una pieza tejida en Mendoza, con historia y mano, se integra a lo que ya construiste y refuerza esa diferencia que buscás sostener.</span>
+        </p>
+        <div class="flex flex-col gap-4 border-l border-[#4f4634]/50 pl-8 hidden md:flex">
+          <span class="text-[#f9c03d] font-bold tracking-widest uppercase text-xs">Valle de Uco, Mendoza</span>
+          <span class="text-[#d3c5ae] text-sm">Confort Térmico • Presencia • Legado</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gallery Section: Asymmetric Editorial Grid -->
+  <section class="py-32 px-8 md:px-16 bg-[#131313]">
+    <div class="max-w-7xl mx-auto mb-24 text-center md:text-left">
+      <h3 class="font-body text-sm font-bold tracking-widest uppercase text-[#f9c03d] mb-4">Aterrizaje del espacio</h3>
+      <p class="text-[#d3c5ae] text-xl font-light">Espacios diseñados para el confort y la memoria táctil.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-y-32 md:gap-x-12 max-w-7xl mx-auto">
+      
+      <!-- 1. Cama principal -->
+      <div class="md:col-span-7 flex flex-col gap-8 group">
+        <div class="bg-[#2a2a2a] overflow-hidden">
+          <img src="/picture/textil%20cine.png" alt="Cama principal" class="w-full aspect-video object-cover scale-[1.25] grayscale-[30%] group-hover:grayscale-0 group-hover:scale-[1.3] transition-all duration-700" />
+        </div>
+        <div class="max-w-md pl-4 border-l-2 border-[#f9c03d]/30">
+          <h4 class="font-headline text-2xl md:text-3xl mb-4 text-white">Cama principal</h4>
+          <p class="text-[#d3c5ae] font-light text-lg">Identidad visual y memoria táctil.</p>
+        </div>
+      </div>
+
+      <!-- 2. Sillón junto a la ventana -->
+      <div class="md:col-span-5 md:pt-40 flex flex-col gap-8 group">
+        <div class="bg-[#2a2a2a] overflow-hidden">
+          <img src="/picture/manta%20escena.png" alt="Sillón junto a la ventana" class="w-full aspect-[3/4] object-cover scale-[1.25] grayscale-[30%] group-hover:grayscale-0 group-hover:scale-[1.3] transition-all duration-700" />
+        </div>
+        <div class="max-w-sm pl-4 border-l-2 border-[#f9c03d]/30">
+          <h4 class="font-headline text-2xl md:text-3xl mb-4 text-white">Sillón junto a la ventana</h4>
+          <p class="text-[#d3c5ae] font-light text-lg">La pausa presente y prolongada.</p>
+        </div>
+      </div>
+
+      <!-- 3. Galería o porche -->
+      <div class="md:col-span-5 flex flex-col gap-8 group">
+        <div class="bg-[#2a2a2a] overflow-hidden">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxuM8OpjfZf94MpQJYZ0byQeLMl-V0Mw9GUfRo-KU6uJ4gSJdAmgk4U-XcRJJ_hwvghUyAn5hTpptxBDmorxvxblLwB1kWu5Jhd1NhTLstTEhCW0Y62tvbwgZEjwTBousqJbC6UdRpv_6AvZ2wu0VacYUY249w5zYiTIbmy1r50r8VuRquEe7gVLi3VklCxUKVrwQkc6kT3flcIe_RiX7VMiI9Ysgj5OZtaKrIog7duROJBC2ZLzd6qyuMV0xJNK6QZks2_lX0rTZR" alt="Galería o porche" class="w-full aspect-[4/5] object-cover grayscale-[30%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" />
+        </div>
+        <div class="max-w-sm pl-4 border-l-2 border-[#f9c03d]/30">
+          <h4 class="font-headline text-2xl md:text-3xl mb-4 text-white">Galería o porche</h4>
+          <p class="text-[#d3c5ae] font-light text-lg">El exterior como hábitat.</p>
+        </div>
+      </div>
+
+      <!-- 4. Área de fogón -->
+      <div class="md:col-span-7 md:-mt-20 flex flex-col gap-8 group">
+        <div class="bg-[#2a2a2a] overflow-hidden">
+          <img src="/picture/2.png" alt="Área de fogón" class="w-full aspect-video object-cover grayscale-[30%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" />
+        </div>
+        <div class="max-w-md pl-4 border-l-2 border-[#f9c03d]/30">
+          <h4 class="font-headline text-2xl md:text-3xl mb-4 text-white">Área de fogón</h4>
+          <p class="text-[#d3c5ae] font-light text-lg">El eje del encuentro.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Closure Section -->
+  <section class="py-48 px-10 bg-[#1c1b1b] border-t border-[#4f4634]/10">
+    <div class="max-w-4xl mx-auto text-center space-y-12">
+      <h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight text-white leading-tight">
+        Si sentís que a tu espacio le falta ese detalle, podés escribirnos y verlo juntos.
+      </h2>
+      <div class="flex flex-col items-center gap-8 pt-8">
+        <a href="contacto.html?segmento=hospitalidad" class="inline-flex items-center gap-4 bg-[#f9c03d] text-[#261900] px-12 py-5 font-bold uppercase tracking-[0.2em] text-xs hover:bg-[#daa520] transition-colors duration-300">
+          Escribinos
+          <span class="material-symbols-outlined">north_east</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#0E0E0E] flex flex-col md:flex-row justify-between items-center px-10 py-16 w-full border-t border-white/5">
+    <div class="text-base font-bold text-[#f9c03d] font-['Manrope'] tracking-widest uppercase mb-8 md:mb-0">FORCADA</div>
+    
+    <div class="flex gap-8 mb-8 md:mb-0">
+      <a class="text-white/40 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-['Manrope']" href="/">Inicio</a>
+      <a class="text-white/40 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-['Manrope']" href="galeria.html">Galería</a>
+      <a class="text-white/40 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-['Manrope']" href="contacto.html">Contacto</a>
+    </div>
+
+    <p class="text-white/40 text-[10px] uppercase tracking-widest font-['Manrope'] text-center md:text-right">
+      © 2025 Forcada.
+    </p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

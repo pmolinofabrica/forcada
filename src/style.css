@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+/* ===========================
+   Design Tokens — Forcada
+   (importados del sistema Stitch)
+   =========================== */
+@theme {
+  --color-surface: #131313;
+  --color-surface-dim: #0e0e0e;
+  --color-surface-container: #20201f;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353535;
+  --color-surface-bright: #393939;
+
+  --color-primary: #f9c03d;
+  --color-primary-dim: #f6be3b;
+  --color-primary-container: #daa520;
+  --color-on-primary: #402d00;
+
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #d3c5ae;
+  --color-outline: #9c8f7a;
+  --color-outline-variant: #4f4634;
+
+  --color-secondary: #ffb68c;
+  --color-on-secondary: #532200;
+
+  --font-headline: "Noto Serif", serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Manrope", sans-serif;
+
+  --radius-DEFAULT: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-full: 9999px;
+}
+
+/* ===========================
+   Base styles
+   =========================== */
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+/* ===========================
+   Typography
+   =========================== */
+.font-headline { font-family: var(--font-headline); }
+.font-body     { font-family: var(--font-body); }
+.font-label    { font-family: var(--font-label); }
+
+/* ===========================
+   Layout helpers
+   =========================== */
+.asymmetric-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* ===========================
+   Material symbols
+   =========================== */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* ===========================
+   Navigation
+   =========================== */
+nav.site-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: color-mix(in srgb, var(--color-surface) 70%, transparent);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-outline-variant) 20%, transparent);
+}
+
+/* ===========================
+   Segment buttons (hero)
+   =========================== */
+.segment-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2.5rem;
+  font-family: var(--font-label);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  border: 1px solid transparent;
+}
+
+.segment-btn-hospitality {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+.segment-btn-hospitality:hover {
+  background-color: var(--color-primary-container);
+}
+
+.segment-btn-identidad {
+  background-color: transparent;
+  color: var(--color-on-surface);
+  border-color: color-mix(in srgb, var(--color-outline-variant) 50%, transparent);
+}
+.segment-btn-identidad:hover {
+  background-color: var(--color-surface-container-high);
+  border-color: var(--color-outline);
+}
+
+.segment-btn-sensorial {
+  background-color: transparent;
+  color: var(--color-on-surface-variant);
+  border-color: color-mix(in srgb, var(--color-outline-variant) 25%, transparent);
+}
+.segment-btn-sensorial:hover {
+  color: var(--color-on-surface);
+  border-color: color-mix(in srgb, var(--color-outline-variant) 50%, transparent);
+}
+
+/* ===========================
+   Texturas Orgánicas
+   =========================== */
+.bg-tierra-oscura {
+  background-color: #0c0a08;
+  background-image: 
+    radial-gradient(ellipse at 50% 0%, rgba(60, 40, 20, 0.25) 0%, transparent 60%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.10'/%3E%3C/svg%3E");
+}
+
+/* ===========================
+   Hover image effects
+   =========================== */
+.img-reveal {
+  filter: grayscale(1) brightness(0.75);
+  transition: filter 0.7s ease, transform 0.7s ease;
+}
+.img-reveal:hover,
+.group:hover .img-reveal {
+  filter: grayscale(0) brightness(1);
+  transform: scale(1.04);
+}
+
+/* ===========================
+   Animations
+   =========================== */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fade-up 0.9s ease forwards;
+}
+.animate-fade-up-delay {
+  opacity: 0;
+  animation: fade-up 0.9s ease 0.3s forwards;
+}
+.animate-fade-up-delay-2 {
+  opacity: 0;
+  animation: fade-up 0.9s ease 0.6s forwards;
+}

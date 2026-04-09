@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos con Identidad — Forcada Textiles</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@100..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="/src/style.css" />
+
+  <style>
+    /* Estilos específicos para inmersión cinemática */
+    body {
+      background-color: #000000;
+      overflow-x: hidden;
+    }
+
+    .font-headline {
+      font-family: 'Newsreader', serif;
+    }
+
+    .font-body {
+      font-family: 'Newsreader', serif;
+    }
+
+    .font-label {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .text-shadow-deep {
+      text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+    }
+
+    .fade-bottom {
+      background: linear-gradient(to bottom, transparent 0%, #000000 100%);
+    }
+
+    .fade-top {
+      background: linear-gradient(to top, transparent 0%, #000000 100%);
+    }
+
+    /* Scroll Behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="font-body text-[#e5e5e5]">
+
+  <!-- NAV (Consistencia Forcada) -->
+  <nav class="site-nav fixed top-0 w-full z-50 transition-all duration-300">
+    <div
+      class="flex justify-between items-center w-full px-8 py-5 max-w-screen-2xl mx-auto backdrop-blur-md bg-black/30">
+      <a href="/" class="font-['Manrope'] font-bold text-lg tracking-widest text-[#d3c4b8]">
+        FORCADA
+      </a>
+      <div class="hidden md:flex gap-10 font-label uppercase tracking-widest text-[10px]">
+        <a href="/" class="text-white/60 hover:text-white transition-colors duration-300">Inicio</a>
+        <a href="galeria.html" class="text-white/60 hover:text-white transition-colors duration-300">Galería</a>
+        <a href="contacto.html" class="text-white/60 hover:text-white transition-colors duration-300">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="w-full">
+
+    <!-- Section 1: Hero Cinemático -->
+    <section class="relative min-h-[90vh] w-full flex items-center justify-center overflow-hidden">
+      <img alt="Texture" class="absolute inset-0 w-full h-full object-cover grayscale opacity-50"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzQSk8dkypFDuWF74YULbuP4R_z9cWU74Fb16Pjl4U0PXrmZ4uZt_cHP5wSOukV6U2Rk1X2QeRB7qk72Iz8TUODGPNlix9SKjLm0T0RkKyVv-srv7NbMMkxO_rdJXF4LcgI4Raxtu0RQv6V6ic-dv5kspbZiXQTWjE-9vu__tY4AAybnv2QJCXVjHSNBi89s8jncnNjWG5mDd3N3MSayyRm1WLIQ1xVeBiXDOwEniX9ZFqwvq_drBscGmjfpveAwLl5CLhINHG579J" />
+      <div class="absolute inset-0 fade-bottom"></div>
+
+      <div class="relative z-10 text-center space-y-6 px-6 mt-16 animate-fade-up">
+        <p class="font-label text-[#9f9d9d] text-xs tracking-[0.4em] uppercase">FORCADA IDENTIDAD</p>
+        <h1
+          class="text-4xl md:text-7xl lg:text-8xl font-headline font-extralight tracking-wide text-white text-shadow-deep max-w-5xl mx-auto leading-tight">
+          Tiempo inscrito en cada pieza
+        </h1>
+      </div>
+    </section>
+
+    <!-- Section 2: Copy principal -->
+    <section
+      class="relative min-h-[60vh] w-full flex flex-col md:flex-row items-center justify-center bg-black overflow-hidden py-24">
+      <div class="absolute inset-0">
+        <img alt="The Cellar" class="w-full h-full object-cover opacity-20 grayscale scale-105"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMOCP6ga6rgR-oh_zaNosMwr896JLfA3z4Gj5xqSdW8AbNRkPgCLfdUxDOQFWcq_cqr69SLKom1LIgUfpFBuOAoW8W2Xd8sK4s7b-ECVebRleAUVAbRwRHObDIVq45VHY-SLryOpMrD-zGRWLLUxKCwlIF7hFgrNKwxAhv9ReF93LJqxNVMGIWv05r6YY0Jj5attA1LakKHS7G90fcfHNFFa3iuYs6nbLxsxh6RWzeK03WVM3OF3bp0Bs3akA2X-7-CiVQJ4a-RvBk" />
+        <div class="absolute inset-0 fade-top"></div>
+        <div class="absolute inset-0 fade-bottom"></div>
+      </div>
+
+      <div class="relative z-10 max-w-4xl px-8 text-center md:text-left mb-12">
+        <div class="flex flex-col gap-12 items-start border-l border-[#d3c4b8]/30 pl-8 md:pl-12">
+          <p class="text-xl md:text-2xl leading-relaxed font-light text-[#d3c4b8]">
+            La barrica y el telar comparten una misma lógica: materia atravesada por tiempo. En ambos, el hacer no se
+            acelera sin perder sentido. La crianza fija carácter en la madera; el tejido fija decisiones en la fibra.
+          </p>
+          <p class="text-lg md:text-xl leading-relaxed font-light text-stone-400">
+            Son procesos donde la repetición construye singularidad y donde la espera no es pausa, sino método. En ese
+            cruce, la pieza textil se ubica como continuidad de una tradición que no se declara, se ejerce. No replica
+            la historia del lugar: se incorpora a su espesor y lo extiende en otra materia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Las 4 Áreas (Inmersión) -->
+    <section class="relative w-full bg-black py-24 flex flex-col items-center justify-center">
+      <div class="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-24 px-8">
+
+        <!-- Area 1 -->
+        <div class="relative group">
+          <div class="h-[600px] w-full overflow-hidden mb-6">
+            <img
+              class="w-full h-full object-cover scale-[1.25] brightness-[0.4] group-hover:scale-[1.3] group-hover:brightness-[0.6] transition-all duration-[2000ms]"
+              src="/picture/textil%20cine%203.png" alt="Sala de degustación" />
+          </div>
+          <h3 class="text-2xl font-headline font-light text-white tracking-widest uppercase mb-4">Sala de degustación
+            privada</h3>
+          <p class="font-label text-xs uppercase tracking-[0.2em] text-[#d3c4b8] leading-loose">
+            materia a la altura del ritual
+          </p>
+        </div>
+
+        <!-- Area 2 -->
+        <div class="relative group md:mt-32">
+          <div class="h-[600px] w-full overflow-hidden mb-6">
+            <img
+              class="w-full h-full object-cover scale-[1.25] brightness-[0.4] group-hover:scale-[1.3] group-hover:brightness-[0.6] transition-all duration-[2000ms]"
+              src="/picture/manta%20escena%202.png"
+              alt="Lounge de cava" />
+          </div>
+          <h3 class="text-2xl font-headline font-light text-white tracking-widest uppercase mb-4">Lounge de cava</h3>
+          <p class="font-label text-xs uppercase tracking-[0.2em] text-[#d3c4b8] leading-loose">
+            permanencia en el tránsito
+          </p>
+        </div>
+
+        <!-- Area 3 -->
+        <div class="relative group">
+          <div class="h-[600px] w-full overflow-hidden mb-6">
+            <img
+              class="w-full h-full object-cover object-[54%_center] scale-110 brightness-[0.4] group-hover:scale-[1.15] group-hover:brightness-[0.6] transition-all duration-[2000ms]"
+              src="/picture/1.png?v=4" alt="Restaurante de bodega" />
+          </div>
+          <h3 class="text-2xl font-headline font-light text-white tracking-widest uppercase mb-4">Restaurante de la
+            bodega</h3>
+          <p class="font-label text-xs uppercase tracking-[0.2em] text-[#d3c4b8] leading-loose">
+            el relato del terruño al contacto
+          </p>
+        </div>
+
+        <!-- Area 4 -->
+        <div class="relative group md:mt-32">
+          <div class="h-[600px] w-full overflow-hidden mb-6">
+            <img
+              class="w-full h-full object-cover brightness-[0.4] group-hover:scale-105 group-hover:brightness-[0.6] transition-all duration-[2000ms]"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmJWYZCfPARZLxYVO_mg5LCVi5_vDPOhNZOCA8vEt4QtOKkvTThTlBUDqIt_NZZT1X3oXH88r-iX1dlYsPnTOnEh9L6kJl5yzTAlpS4PyF7zeH9kg3qXBq-YXwiPE1UMo5y1W473QgtkEBDYEQ9HtZ_PdMqsOFM0gD3gAHtgtgn-92FRdT-FOhXHZAAASM-4z47mljvQxDZvmN-2TCywc5WawoW5sbZqWI2ZXXOuzlAKVn2pc8HeM8lrcfrMVJw2n7Kk6XXQpEg7YD"
+              alt="Espacio de tienda" />
+          </div>
+          <h3 class="text-2xl font-headline font-light text-white tracking-widest uppercase mb-4">Espacio de tienda</h3>
+          <p class="font-label text-xs uppercase tracking-[0.2em] text-[#d3c4b8] leading-loose">
+            obra que funciona como continuidad del legado fuera del ámbito de la bodega
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Cierre / Contacto -->
+    <section class="relative min-h-[50vh] w-full flex items-center justify-center bg-[#0a0a0a] py-32">
+      <img alt="Final Texture" class="absolute inset-0 w-full h-full object-cover opacity-10"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB89Sgm6HS7KLHHICi4sh-IMT32TG_S4JvTrTVfSqhUpjx0ZE558Lr1bAmaWKwaPVxT6pR3uGOuIJkrLkzu6OcJKzugzCu8Ed9ZjqluQ8ychxSFKj4I5EcI_dGEkNRmjx2cxPXmYTVjlll1kVtot8_r3fK-WxmxiOugEqk8w0NMuXF3gAmUYIfd7Z3-jQdOUVgdVcdYufLW-BzpWr7Vo3b-XfkF_LDa6swj2Ig8XnGYKrypp7k3sHRmBCgQ7HHHkodKwdFCZHcYZzya" />
+      <div
+        class="relative z-10 flex flex-col items-center gap-16 px-6 max-w-4xl text-center border-t border-white/10 pt-24">
+
+        <h4 class="text-2xl md:text-4xl font-headline font-light text-stone-300 leading-relaxed italic">
+          Cuando el proyecto requiere una pieza que dialogue con su historia, esa conversación puede iniciarse.
+        </h4>
+
+        <a href="contacto.html?segmento=identidad"
+          class="group flex items-center gap-4 bg-[#d3c4b8] text-black px-12 py-5 font-label uppercase text-xs tracking-[0.3em] hover:bg-white transition-colors duration-500">
+          Iniciar conversación
+          <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">east</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-black py-16 px-8 border-t border-white/10">
+    <div
+      class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 font-label text-[10px] uppercase tracking-widest text-[#555555]">
+      <div class="font-[Manrope] font-bold text-[#d3c4b8] text-base tracking-widest">FORCADA</div>
+      <div class="flex gap-8">
+        <a href="/" class="hover:text-white transition-colors">Inicio</a>
+        <a href="galeria.html" class="hover:text-white transition-colors">Galería</a>
+        <a href="contacto.html" class="hover:text-white transition-colors">Contacto</a>
+      </div>
+      <div>© 2025 Forcada. The Andean Monolith.</div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

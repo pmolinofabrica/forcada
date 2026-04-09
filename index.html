@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forcada Textiles — Textiles Artesanales del Valle de Uco</title>
+  <meta name="description" content="Textiles artesanales para espacios de hospitalidad, proyectos con identidad y experiencias sensoriales. Creados en el Valle de Uco, Mendoza." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="font-body">
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="flex justify-between items-center w-full px-8 py-5 max-w-screen-2xl mx-auto">
+      <a href="/" class="font-headline text-lg tracking-tighter text-[--color-primary]">
+        FORCADA
+      </a>
+      <div class="hidden md:flex gap-10 font-label uppercase tracking-widest text-xs">
+        <a href="#colecciones" class="text-[--color-on-surface-variant] hover:text-[--color-primary] transition-colors duration-300">Colecciones</a>
+        <a href="galeria.html" class="text-[--color-on-surface-variant] hover:text-[--color-primary] transition-colors duration-300">Galería</a>
+        <a href="contacto.html" class="text-[--color-on-surface-variant] hover:text-[--color-primary] transition-colors duration-300">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="relative min-h-screen flex items-end pt-32 pb-20 px-8 md:px-20 overflow-hidden bg-[--color-surface]" id="hero-section">
+      <!-- Sistema de fondo de Video -->
+      <div class="absolute inset-0 z-0 bg-[--color-surface]">
+        <!-- Video de fondo escalado levemente y desplazado para sacar marcos/marcas -->
+        <video 
+          autoplay 
+          loop 
+          muted 
+          playsinline 
+          class="absolute inset-0 w-full h-full object-cover"
+          style="filter: brightness(0.6) contrast(1.05);"
+        >
+          <source src="/picture/Efecto_Atardecer_con_Rayo_de_Sol.mp4" type="video/mp4" />
+        </video>
+        
+        <!-- Cortina de gradiente profundo sobre el lateral derecho para ocultar la marca de agua -->
+        <div class="absolute inset-y-0 right-0 w-2/5 md:w-1/3 bg-gradient-to-l from-[--color-surface] via-[--color-surface]/90 to-transparent pointer-events-none z-10"></div>
+
+        <!-- Gradiente base inferior para legibilidad del texto -->
+        <div class="absolute inset-0 bg-gradient-to-t from-[--color-surface] via-[--color-surface]/80 to-transparent pointer-events-none z-10"></div>
+      </div>
+
+      <!-- Contenido hero -->
+      <div class="relative z-10 w-full max-w-screen-2xl mx-auto">
+        <div class="max-w-3xl">
+          <p class="font-label text-xs tracking-[0.4em] text-[--color-primary] uppercase mb-6 animate-fade-up">
+            Valle de Uco · Mendoza
+          </p>
+          <h1 class="font-headline text-5xl md:text-8xl leading-[0.9] tracking-tighter text-[--color-on-surface] mb-8 animate-fade-up">
+            DONDE EL <br/>
+            <span class="text-[--color-primary] italic">MATERIAL</span> COMIENZA,<br/>
+            LA ARQUITECTURA<br/>TERMINA.
+          </h1>
+          <p class="max-w-lg text-base md:text-lg text-[--color-on-surface-variant] font-light leading-relaxed mb-14 animate-fade-up-delay">
+            Textiles artesanales para espacios que no quieren decoración. Quieren objetos bañados por el sol de Mendoza.
+          </p>
+
+          <!-- Los 3 botones de segmento — pieza central -->
+          <div id="segmentos" class="flex flex-col gap-3 max-w-xl animate-fade-up-delay-2">
+            <a href="hospitalidad.html" id="btn-hospitalidad" class="segment-btn segment-btn-hospitality group">
+              <span>Para espacios de hospitalidad</span>
+              <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform duration-300">arrow_right_alt</span>
+            </a>
+            <a href="identidad.html" id="btn-identidad" class="segment-btn segment-btn-identidad group">
+              <span>Para proyectos con identidad</span>
+              <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform duration-300">arrow_right_alt</span>
+            </a>
+            <a href="experiencias.html" id="btn-sensorial" class="segment-btn segment-btn-sensorial group">
+              <span>Para experiencias sensoriales</span>
+              <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform duration-300">arrow_right_alt</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN: HERENCIA FUNCIONAL -->
+    <section id="colecciones" class="py-24 md:py-40 bg-[--color-surface-container-low]">
+      <div class="max-w-screen-2xl mx-auto px-8 md:px-20">
+        <div class="flex flex-col md:flex-row justify-between items-baseline mb-20 border-b border-[--color-outline-variant]/15 pb-8">
+          <h2 class="font-headline text-4xl md:text-6xl text-[--color-on-surface]">HERENCIA FUNCIONAL</h2>
+          <span class="font-label text-xs tracking-[0.3em] text-[--color-primary] mt-4 md:mt-0 uppercase">01 / EL MATERIAL</span>
+        </div>
+
+        <div class="asymmetric-grid gap-y-20">
+          <!-- Card 1 -->
+          <div class="col-span-12 lg:col-span-5 self-center">
+            <div class="bg-[--color-surface] p-10 lg:p-16 shadow-2xl">
+              <h3 class="font-headline text-2xl md:text-3xl mb-5 text-[--color-primary]">Barrera Térmica</h3>
+              <p class="text-[--color-on-surface-variant] leading-loose text-sm md:text-base">
+                Más allá de la decoración, nuestra lana andina de alto gramaje actúa como regulador térmico. Captura el calor de la montaña y lo libera lentamente, creando un microclima de intimidad en los grandes vacíos estructurales.
+              </p>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-7 overflow-hidden">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqYhQADc_P8Ep_Xt8qwK9cmIJXyK9IwmEzGMDLaDP8QoOy070sv1DFevK0J0J6ulmmG90fbn1IFyV65iCHl92_Bhmu5eL7eU84lesR7NSmm68oUmUfhmBehPVa8KaGRx3Tj0tfPxqm_4hQiBjHjD3LUJEkEtEEYOX2zSgkO3PxKebEg7uuUH0cSh54NwlvH2jXcISVp42VuQDXbpuN-3PdYS3z63tTBEiGCBgfe3aEy4GvJtmy5xF2RHEYNn_mBnh4iNlRpBHtVrCl"
+              alt="Textura de tejido artesanal andino en tonos tierra"
+              class="w-full aspect-video object-cover img-reveal"
+            />
+          </div>
+        </div>
+
+        <!-- Tarjetas de Transición -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-24 mt-10 text-center md:text-left">
+          <div class="bg-[--color-surface] p-10 hover:bg-[--color-surface-container-high] transition-colors duration-500 border border-transparent hover:border-[--color-outline-variant]/30 flex flex-col justify-start">
+            <span class="material-symbols-outlined text-[--color-primary] mb-6 text-2xl font-light">diversity_2</span>
+            <h4 class="font-headline text-lg text-[--color-on-surface] mb-3">Legado textil</h4>
+            <p class="text-[--color-on-surface-variant] text-sm leading-relaxed">Lana de oveja 100% natural, hilada por mujeres mendocinas que preservan el oficio.</p>
+          </div>
+          <div class="bg-[--color-surface] p-10 hover:bg-[--color-surface-container-high] transition-colors duration-500 border border-transparent hover:border-[--color-outline-variant]/30 flex flex-col justify-start">
+            <span class="material-symbols-outlined text-[--color-primary] mb-6 text-2xl font-light">pan_tool</span>
+            <h4 class="font-headline text-lg text-[--color-on-surface] mb-3">Trama a pulso</h4>
+            <p class="text-[--color-on-surface-variant] text-sm leading-relaxed">Confección íntegramente a mano, donde cada nudo es único e irrepetible.</p>
+          </div>
+          <div class="bg-[--color-surface] p-10 hover:bg-[--color-surface-container-high] transition-colors duration-500 border border-transparent hover:border-[--color-outline-variant]/30 flex flex-col justify-start">
+            <span class="material-symbols-outlined text-[--color-primary] mb-6 text-2xl font-light">grid_4x4</span>
+            <h4 class="font-headline text-lg text-[--color-on-surface] mb-3">Telar tradicional</h4>
+            <p class="text-[--color-on-surface-variant] text-sm leading-relaxed">Entramado mediante técnicas tradicionales que le dan estructura y cuerpo a la pieza.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN: HOSPITALITY SHOWCASE -->
+    <section class="py-16 md:py-24 bg-[--color-surface]">
+      <div class="max-w-screen-2xl mx-auto px-8 md:px-20">
+        <div class="flex flex-col md:flex-row justify-between items-baseline mb-20">
+          <h2 class="font-headline text-4xl md:text-6xl text-[--color-on-surface]">HOSPITALIDAD</h2>
+          <span class="font-label text-xs tracking-[0.3em] text-[--color-primary] mt-4 md:mt-0 uppercase">02 / ESPACIOS</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="group cursor-pointer">
+            <div class="overflow-hidden mb-6">
+              <img class="w-full h-[500px] object-cover img-reveal group-hover:scale-105 transition-transform duration-700" src="/picture/manta%20escena.png" alt="Manta Escena" />
+            </div>
+            <p class="text-[--color-on-surface-variant] text-sm leading-relaxed">El textil acompaña el uso real del exterior y vincula el espacio con el paisaje</p>
+          </div>
+          <div class="group cursor-pointer md:pt-20">
+            <div class="overflow-hidden mb-6">
+              <img class="w-full h-[500px] object-cover img-reveal group-hover:scale-105 transition-transform duration-700" src="/picture/manta%20escena%202.png" alt="Manta Escena 2" />
+            </div>
+            <p class="text-[--color-on-surface-variant] text-sm leading-relaxed">La pieza se integra a la estructura y sostiene la experiencia alrededor del descanso</p>
+          </div>
+          <div class="group cursor-pointer">
+            <div class="overflow-hidden mb-6">
+              <img class="w-full h-[500px] object-cover img-reveal group-hover:scale-105 transition-transform duration-700" src="/picture/manta%20escena%203.png" alt="Manta Escena 3" />
+            </div>
+            <p class="text-[--color-on-surface-variant] text-sm leading-relaxed">El textil introduce materia en una arquitectura de líneas controladas y define el punto de contacto</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA: CONSULTA (Tierra Oscura / Raíz) -->
+    <section class="py-32 md:py-48 bg-tierra-oscura border-t border-[--color-outline-variant]/10 relative">
+      <div class="max-w-screen-2xl mx-auto px-8 md:px-20 text-center relative z-10">
+        <span class="font-label text-xs tracking-[0.5em] text-[--color-primary] block mb-8 uppercase">Contacto directo</span>
+        <h2 class="font-headline text-5xl md:text-8xl mb-16 text-[--color-on-surface] leading-tight">
+          LA CONSULTA<br/>TEXTIL
+        </h2>
+        <div class="flex flex-col md:flex-row items-stretch justify-center gap-6 max-w-3xl mx-auto">
+          <a href="contacto.html?tipo=arquitectura" class="text-left flex-1 p-10 bg-[--color-surface-container-high] border border-[--color-outline-variant]/10 hover:border-[--color-outline]/40 transition-colors duration-300 group">
+            <span class="material-symbols-outlined text-[--color-primary] text-4xl mb-5 block">architecture</span>
+            <h3 class="text-lg font-headline mb-3">Proyectos a medida</h3>
+            <p class="text-[--color-on-surface-variant] text-sm mb-6 leading-relaxed">Soluciones textiles personalizadas. Asesoramiento directo para desarrollar mantas y objetos que se integren a la planificación de su proyecto.</p>
+            <span class="flex items-center gap-2 text-[--color-primary] font-bold tracking-widest text-xs uppercase group-hover:gap-3 transition-all">
+              WHATSAPP <span class="material-symbols-outlined text-base">arrow_right_alt</span>
+            </span>
+          </a>
+          <a href="https://ecocircular.ar/tejido-artesanal/" target="_blank" class="text-left flex-1 p-10 bg-[--color-primary] text-[--color-on-primary] hover:bg-[--color-primary-container] transition-colors duration-300 group">
+            <span class="material-symbols-outlined text-4xl mb-5 block">shopping_cart</span>
+            <h3 class="text-lg font-headline mb-3">Objetos curados</h3>
+            <p class="text-[--color-on-primary]/80 text-sm mb-6 leading-relaxed">Explore nuestras piezas tejidas en telar. Una selección de textiles para el hogar, bolsos y utilitarios de uso diario.</p>
+            <span class="flex items-center gap-2 font-bold tracking-widest text-xs uppercase group-hover:gap-3 transition-all">
+              IR A LA TIENDA <span class="material-symbols-outlined text-base">arrow_right_alt</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[--color-surface-dim] border-t border-[--color-outline-variant]/15">
+    <div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8 max-w-screen-2xl mx-auto">
+      <div class="font-headline text-base text-[--color-primary]">FORCADA</div>
+      <div class="font-label tracking-widest text-[10px] uppercase text-[--color-on-surface-variant]/40 flex gap-8">
+        <a href="#" class="hover:text-[--color-primary] transition-colors duration-500">Privacidad</a>
+        <a href="#" class="hover:text-[--color-primary] transition-colors duration-500">Artesanía</a>
+        <a href="contacto.html" class="hover:text-[--color-primary] transition-colors duration-500">Contacto</a>
+      </div>
+      <div class="font-label tracking-widest text-[10px] uppercase text-[--color-on-surface-variant]/30">
+        © 2025 Forcada. Valle de Uco, Mendoza.
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

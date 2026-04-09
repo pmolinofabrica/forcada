@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería — Forcada Textiles</title>
+  <meta name="description"
+    content="Colección de textiles artesanales para hospitalidad, identidad y experiencias sensoriales. Forcada, Valle de Uco." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body class="font-body">
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="flex justify-between items-center w-full px-8 py-5 max-w-screen-2xl mx-auto">
+      <a href="/" class="font-headline text-lg tracking-tighter text-[--color-primary]">FORCADA</a>
+      <div class="hidden md:flex gap-10 font-label uppercase tracking-widest text-xs">
+        <a href="/"
+          class="text-[--color-on-surface-variant] hover:text-[--color-primary] transition-colors duration-300">Inicio</a>
+        <a href="galeria.html" class="text-[--color-primary] border-b border-[--color-primary]/40 pb-0.5">Galería</a>
+        <a href="contacto.html"
+          class="text-[--color-on-surface-variant] hover:text-[--color-primary] transition-colors duration-300">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-32 pb-24">
+    <div class="max-w-screen-2xl mx-auto px-8 md:px-20">
+
+      <!-- Filtros por segmento -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-baseline mb-16 border-b border-[--color-outline-variant]/15 pb-8">
+        <h1 class="font-headline text-4xl md:text-6xl text-[--color-on-surface]">GALERÍA</h1>
+        <div id="filtros" class="flex gap-4 mt-6 md:mt-0 flex-wrap">
+          <button data-filter="todos"
+            class="filtro-btn active font-label text-[10px] tracking-widest uppercase px-4 py-2 border border-[--color-primary] text-[--color-primary]">Todos</button>
+          <button data-filter="hospitalidad"
+            class="filtro-btn font-label text-[10px] tracking-widest uppercase px-4 py-2 border border-[--color-outline-variant]/40 text-[--color-on-surface-variant] hover:border-[--color-outline] transition-colors">Hospitalidad</button>
+          <button data-filter="identidad"
+            class="filtro-btn font-label text-[10px] tracking-widest uppercase px-4 py-2 border border-[--color-outline-variant]/40 text-[--color-on-surface-variant] hover:border-[--color-outline] transition-colors">Identidad</button>
+          <button data-filter="materialidad"
+            class="filtro-btn font-label text-[10px] tracking-widest uppercase px-4 py-2 border border-[--color-outline-variant]/40 text-[--color-on-surface-variant] hover:border-[--color-outline] transition-colors">Materialidad</button>
+        </div>
+      </div>
+
+      <!-- Grid de piezas -->
+      <div id="galeria-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <a href="hospitalidad.html" class="galeria-item group cursor-pointer block" data-segmento="hospitalidad">
+          <div class="overflow-hidden mb-5">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtFYk06axe14Ms531j-gczFnCItXuVoXbVoeKJoARJxo1Z6uVA41MmX6-kf_1_ITxzM-5_7ecrhzoGn_gG8KwXePoQ4oqSTGRxDoOnEUIsXCK8BA--Pp7n0dz8t2JcRCelLZPEPwGz0PFUopk5uisYjR0hDzAdGR72SaVutDh0rfNKWsdEB_gEAqin2Y-E-YJMr0xdgwRX2Q-SpRD8RfZt8SlzaENSiK_ydEvQVfElogV9wrYVCCnN_kmjnwpI3mapjuEah6AGxvVG"
+              alt="The Reserve Mendoza"
+              class="w-full h-80 object-cover img-reveal group-hover:scale-105 transition-transform duration-700" />
+          </div>
+          <p class="font-['Bodoni_Moda'] text-2xl md:text-3xl tracking-wide uppercase text-[--color-primary] mb-1">
+            Hospitalidad</p>
+          <h3 class="font-headline text-lg text-[--color-on-surface]">The Reserve, Mendoza</h3>
+          <p class="text-[--color-on-surface-variant] text-xs mt-1">Equipamiento completo · Lana andina</p>
+        </a>
+
+        <a href="identidad.html" class="galeria-item group cursor-pointer block" data-segmento="identidad">
+          <div class="overflow-hidden mb-5">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqYhQADc_P8Ep_Xt8qwK9cmIJXyK9IwmEzGMDLaDP8QoOy070sv1DFevK0J0J6ulmmG90fbn1IFyV65iCHl92_Bhmu5eL7eU84lesR7NSmm68oUmUfhmBehPVa8KaGRx3Tj0tfPxqm_4hQiBjHjD3LUJEkEtEEYOX2zSgkO3PxKebEg7uuUH0cSh54NwlvH2jXcISVp42VuQDXbpuN-3PdYS3z63tTBEiGCBgfe3aEy4GvJtmy5xF2RHEYNn_mBnh4iNlRpBHtVrCl"
+              alt="Textura artesanal"
+              class="w-full h-80 object-cover img-reveal group-hover:scale-105 transition-transform duration-700" />
+          </div>
+          <p class="font-['Bodoni_Moda'] text-2xl md:text-3xl tracking-wide uppercase text-[--color-primary] mb-1">
+            Identidad</p>
+          <h3 class="font-headline text-lg text-[--color-on-surface]">Barrera Térmica Série I</h3>
+          <p class="text-[--color-on-surface-variant] text-xs mt-1">Lana cruda · Hilado a mano</p>
+        </a>
+
+        <a href="experiencias.html" class="galeria-item group cursor-pointer block" data-segmento="materialidad">
+          <div class="overflow-hidden mb-5">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuASokOFWgEnIK_wZW_UFHG8N7ISB8TfRlDYnCEF4FIhoSrxih0g2f2L40O2IvXql0Q665Zg2Aaz-lWCIXKeTXJ2pIUiTUpX7ZwQ097wXZT9jikpuseIfcLAVCvcOb_oM6iJka_NO-EACYwxxWKfp33tSQfqDb_Jnqr3rssbrhq87tgs9YY-sJMgOs22ZDDLJFDh9eeROwQDqO2exAqkzfmI_isVw5HHx0SY2djD7g4kFzyhlKKTRWjQRcOg2iI4GWZapEQz2n_bWsuT"
+              alt="Drape arquitectónico"
+              class="w-full h-80 object-cover img-reveal group-hover:scale-105 transition-transform duration-700" />
+          </div>
+          <p class="font-['Bodoni_Moda'] text-2xl md:text-3xl tracking-wide uppercase text-[--color-primary] mb-1">
+            Materialidad</p>
+          <h3 class="font-headline text-lg text-[--color-on-surface]">Casa de Uco — Drape</h3>
+          <p class="text-[--color-on-surface-variant] text-xs mt-1">Seda y lana · Panel acústico</p>
+        </a>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-[--color-surface-dim] border-t border-[--color-outline-variant]/15">
+    <div
+      class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8 max-w-screen-2xl mx-auto">
+      <div class="font-headline text-base text-[--color-primary]">FORCADA</div>
+      <div class="font-label tracking-widest text-[10px] uppercase text-[--color-on-surface-variant]/40 flex gap-8">
+        <a href="/" class="hover:text-[--color-primary] transition-colors duration-500">Inicio</a>
+        <a href="contacto.html" class="hover:text-[--color-primary] transition-colors duration-500">Contacto</a>
+      </div>
+      <div class="font-label tracking-widest text-[10px] uppercase text-[--color-on-surface-variant]/30">
+        © 2025 Forcada. Valle de Uco, Mendoza.
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    // Filtros de galería
+    const filtros = document.querySelectorAll('.filtro-btn')
+    const items = document.querySelectorAll('.galeria-item')
+
+    // Auto-seleccionar filtro por URL param
+    const params = new URLSearchParams(window.location.search)
+    const segParam = params.get('segmento')
+    if (segParam) {
+      filtros.forEach(f => {
+        f.classList.toggle('active', f.dataset.filter === segParam)
+        f.classList.toggle('border-[--color-primary]', f.dataset.filter === segParam)
+        f.classList.toggle('text-[--color-primary]', f.dataset.filter === segParam)
+      })
+      filtrar(segParam)
+    }
+
+    filtros.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filtros.forEach(b => {
+          b.classList.remove('active', 'border-[--color-primary]', 'text-[--color-primary]')
+          b.classList.add('border-[--color-outline-variant]/40', 'text-[--color-on-surface-variant]')
+        })
+        btn.classList.add('active', 'border-[--color-primary]', 'text-[--color-primary]')
+        btn.classList.remove('border-[--color-outline-variant]/40', 'text-[--color-on-surface-variant]')
+        filtrar(btn.dataset.filter)
+      })
+    })
+
+    function filtrar(val) {
+      items.forEach(item => {
+        const show = val === 'todos' || item.dataset.segmento === val
+        item.style.display = show ? 'block' : 'none'
+      })
+    }
+  </script>
+</body>
+
+</html>

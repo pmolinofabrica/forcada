@@ -32,4 +32,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ./
+          port: 21
+          timeout: 90000
           local-dir: ./dist/

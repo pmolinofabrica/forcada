@@ -101,7 +101,7 @@
         <!-- Formulario -->
         <div>
           <h2 class="font-headline text-2xl text-[--color-on-surface] mb-6">Enviar consulta</h2>
-          <form id="form-contacto" action="/contacto" method="POST" class="flex flex-col gap-6">
+          <form id="form-contacto" action="/api/contacto" method="POST" class="flex flex-col gap-6">
             <!-- Tipo de consulta (pre-seleccionable por segmento) -->
             <div>
               <label class="font-label text-[10px] tracking-widest uppercase text-[--color-on-surface-variant] block mb-3">Tipo de proyecto</label>
@@ -217,11 +217,24 @@
     </div>
   </div>
 
+  <div id="error-msg" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+    <div class="bg-[--color-surface] p-12 max-w-md mx-4 text-center border border-red-500/20">
+      <span class="material-symbols-outlined text-red-400 text-5xl mb-6 block">error</span>
+      <h3 class="font-headline text-2xl text-[--color-on-surface] mb-4">Error al enviar</h3>
+      <p class="text-[--color-on-surface-variant] text-sm leading-relaxed mb-8">No pudimos procesar tu consulta. Por favor intentá de nuevo o escribinos directamente por WhatsApp.</p>
+      <a href="/contacto.html" class="inline-flex items-center gap-2 text-[--color-primary] text-xs uppercase tracking-widest font-bold">Intentar de nuevo</a>
+    </div>
+  </div>
+
   <script type="module">
-    // Mostrar mensaje de éxito si viene de form submit
+    // Mostrar mensaje de éxito/error si viene de form submit
     const params = new URLSearchParams(window.location.search)
     if (params.get('enviado') === 'ok') {
       document.getElementById('success-msg').classList.remove('hidden')
+      history.replaceState(null, '', '/contacto.html')
+    }
+    if (params.get('enviado') === 'error') {
+      document.getElementById('error-msg').classList.remove('hidden')
       history.replaceState(null, '', '/contacto.html')
     }
 

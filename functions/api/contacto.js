@@ -2,10 +2,6 @@ export async function onRequest(context) {
   const { request } = context;
   const url = new URL(request.url);
 
-  if (request.method === 'GET') {
-    return Response.redirect(`${url.origin}/contacto.html`, 302);
-  }
-
   if (request.method !== 'POST') {
     return new Response('Method not allowed', { status: 405 });
   }

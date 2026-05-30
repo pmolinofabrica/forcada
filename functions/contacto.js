@@ -7,7 +7,10 @@ export async function onRequest(context) {
 
   try {
     const formData = await request.formData();
-    const data = Object.fromEntries(formData);
+    const nombre = formData.get('nombre') || '';
+    const email = formData.get('_replyto') || '';
+    const tipo = formData.get('tipo') || '';
+    const mensaje = formData.get('mensaje') || '';
 
     const SHEETS_URL = context.env.SHEETS_URL || '';
 
@@ -15,13 +18,13 @@ export async function onRequest(context) {
       await fetch(SHEETS_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ nombre, email, tipo, mensaje }),
       });
     }
 
     const url = new URL(request.url);
     return Response.redirect(`${url.origin}/contacto.html?enviado=ok`, 302);
   } catch (error) {
-    return new Response('Error al enviar el formulario', { status: 500 });
+    return Response.redirect(`${new URL(request.url).origin}/contacto.html?enviado=error`, 302);
   }
 }

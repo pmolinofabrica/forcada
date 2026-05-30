@@ -1,5 +1,10 @@
 export async function onRequest(context) {
   const { request } = context;
+  const url = new URL(request.url);
+
+  if (request.method === 'GET') {
+    return Response.redirect(`${url.origin}/contacto.html`, 302);
+  }
 
   if (request.method !== 'POST') {
     return new Response('Method not allowed', { status: 405 });
@@ -22,9 +27,8 @@ export async function onRequest(context) {
       });
     }
 
-    const url = new URL(request.url);
     return Response.redirect(`${url.origin}/contacto.html?enviado=ok`, 302);
   } catch (error) {
-    return Response.redirect(`${new URL(request.url).origin}/contacto.html?enviado=error`, 302);
+    return Response.redirect(`${url.origin}/contacto.html?enviado=error`, 302);
   }
 }

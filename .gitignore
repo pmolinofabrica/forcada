@@ -5,3 +5,9 @@ dist/
 .vscode/
 .env
 vault-forcada.md
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example

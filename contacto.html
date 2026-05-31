@@ -151,7 +151,7 @@
           <h2 class="font-headline text-2xl text-[--color-on-surface]">Información de contacto</h2>
           <div>
             <span class="font-label text-[10px] tracking-widest uppercase text-[--color-primary] block mb-4">WhatsApp directo</span>
-            <a href="https://wa.me/5492615722282" class="font-headline text-2xl text-[--color-on-surface] hover:text-[--color-primary] transition-colors duration-300 flex items-center gap-3">
+            <a href="https://wa.me/5492615722282" class="font-headline text-2xl text-[--color-on-surface] hover:text-[--color-primary] transition-colors duration-300 flex items-center gap-3" onclick="gtag('event', 'whatsapp_click', {event_category: 'contacto', event_label: 'whatsapp_directo', value: 1})">
               +54 9 261 5722282
               <span class="material-symbols-outlined text-base">open_in_new</span>
             </a>
@@ -230,6 +230,11 @@
     // Mostrar mensaje de éxito/error si viene de form submit
     const params = new URLSearchParams(window.location.search)
     if (params.get('enviado') === 'ok') {
+      gtag('event', 'form_submit', {
+        event_category: 'lead',
+        event_label: 'consulta',
+        value: 1
+      })
       document.getElementById('success-msg').classList.remove('hidden')
       history.replaceState(null, '', '/contacto.html')
     }

@@ -134,15 +134,15 @@
           <!-- Los 3 botones de segmento — pieza central -->
           <h2 class="font-label text-xs tracking-[0.4em] text-[--color-primary] uppercase mb-4">Tres formas de integrar el textil artesanal</h2>
           <div id="segmentos" class="flex flex-col gap-3 max-w-xl animate-fade-up-delay-2">
-            <a href="hospitalidad.html" id="btn-hospitalidad" class="segment-btn segment-btn-hospitality group">
+            <a href="hospitalidad.html" id="btn-hospitalidad" class="segment-btn segment-btn-hospitality group" onclick="gtag('event', 'segment_click', {event_category: 'navigation', event_label: 'hospitalidad', value: 1})">
               <span>Para hoteles boutique, wine hotels y lodges</span>
               <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform duration-300">arrow_right_alt</span>
             </a>
-            <a href="identidad.html" id="btn-identidad" class="segment-btn segment-btn-identidad group">
+            <a href="identidad.html" id="btn-identidad" class="segment-btn segment-btn-identidad group" onclick="gtag('event', 'segment_click', {event_category: 'navigation', event_label: 'identidad', value: 1})">
               <span>Para proyectos con identidad mendocina</span>
               <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform duration-300">arrow_right_alt</span>
             </a>
-            <a href="experiencias.html" id="btn-sensorial" class="segment-btn segment-btn-sensorial group">
+            <a href="experiencias.html" id="btn-sensorial" class="segment-btn segment-btn-sensorial group" onclick="gtag('event', 'segment_click', {event_category: 'navigation', event_label: 'sensorial', value: 1})">
               <span>Para diseño textil personalizado</span>
               <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform duration-300">arrow_right_alt</span>
             </a>
@@ -240,7 +240,7 @@
           LA CONSULTA<br/>TEXTIL
         </h2>
         <div class="flex flex-col md:flex-row items-stretch justify-center gap-6 max-w-3xl mx-auto">
-          <a href="contacto.html?tipo=arquitectura" class="text-left flex-1 p-10 bg-[--color-surface-container-high] border border-[--color-outline-variant]/10 hover:border-[--color-outline]/40 transition-colors duration-300 group">
+          <a href="contacto.html?tipo=arquitectura" class="text-left flex-1 p-10 bg-[--color-surface-container-high] border border-[--color-outline-variant]/10 hover:border-[--color-outline]/40 transition-colors duration-300 group" onclick="gtag('event', 'cta_click', {event_category: 'conversion', event_label: 'proyectos_a_medida', value: 1})">
             <span class="material-symbols-outlined text-[--color-primary] text-4xl mb-5 block">architecture</span>
             <h3 class="text-lg font-headline mb-3">Proyectos a medida</h3>
             <p class="text-[--color-on-surface-variant] text-sm mb-6 leading-relaxed">Soluciones textiles personalizadas. Asesoramiento directo para desarrollar mantas y objetos que se integren a la planificación de su proyecto.</p>
@@ -248,7 +248,7 @@
               WHATSAPP <span class="material-symbols-outlined text-base">arrow_right_alt</span>
             </span>
           </a>
-          <a href="https://ecocircular.ar/tejido-artesanal/" target="_blank" class="text-left flex-1 p-10 bg-[--color-primary] text-[--color-on-primary] hover:bg-[--color-primary-container] transition-colors duration-300 group">
+          <a href="https://ecocircular.ar/tejido-artesanal/" target="_blank" class="text-left flex-1 p-10 bg-[--color-primary] text-[--color-on-primary] hover:bg-[--color-primary-container] transition-colors duration-300 group" onclick="gtag('event', 'cta_click', {event_category: 'conversion', event_label: 'tienda_ecocircular', value: 1})">
             <span class="material-symbols-outlined text-4xl mb-5 block">shopping_cart</span>
             <h3 class="text-lg font-headline mb-3">Objetos curados</h3>
             <p class="text-[--color-on-primary]/80 text-sm mb-6 leading-relaxed">Explore nuestras piezas tejidas en telar. Una selección de textiles para el hogar, bolsos y utilitarios de uso diario.</p>

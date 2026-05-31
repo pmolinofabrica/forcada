@@ -234,6 +234,9 @@
       history.replaceState(null, '', '/contacto.html')
     }
     if (params.get('enviado') === 'error') {
+      const detalle = params.get('detalle')
+      const p = document.querySelector('#error-msg p')
+      if (detalle && p) p.textContent = 'Error: ' + detalle
       document.getElementById('error-msg').classList.remove('hidden')
       history.replaceState(null, '', '/contacto.html')
     }
